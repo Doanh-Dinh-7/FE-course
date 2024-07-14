@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 6 - Form</title>
+</head>
+<body>
+    <!-- 
+    <form name="..." action="..." method="...">
+        các thành phần của Form 
+            NAME: tên Form
+            ACTION: chỉ định trang web nhận xử lý dữ liệu từ Form này khi có sự kiện click của buttion SUBMIT.
+            METHOD: Xác định phương thức chuyển dữ liệu (POST, GET)
+        
+        + Text field
+        + Password field
+        + Hidden Text field
+        + Check box
+        + Radio button
+        + File Form Control
+        + Submit Button, Reset Button, Generalized Button
+        + Multiple-line text field (*)
+        + Label (*)
+        + Pull-down menu (*)
+        + Scrolled list (*)
+    </form>
+    -->
+
+    <!-- Text field (type = "text") 
+        <input  type="text" 
+                name="string"
+                size="variant"
+                readonly
+                maxlength="long"
+                tabindex="integer"
+                value="string" 
+                id="">
+    -->
+    <h1>Text Field</h1>
+    <span>Ví dụ:</span>
+    <input type="text" name="txt_Name" value="This is one line text with 301" size="20" maxlength="30">
+    <br>
+    <h2>Kết quả chạy:</h2>
+    <form >
+        <p>Họ lót</p>
+        <input type="text" name="txt_Surname" id="">
+        <p>Tên:</p>
+        <input type="text" name="txt_Lastname" id="">
+    </form>
+    <br><hr>
+    <!--Kết thúc phần Text field -->
+
+    <!-- Password Field (type = "password")
+        <input  type="password" 
+                name="string"
+                size="variant"
+                maxlength="long"
+                tabindex="integer"
+                value="string" 
+                id="">
+    -->
+    <h1>Password Field</h1>
+    <span>Ví dụ:</span>
+    <input type="password" name="txt_Password" value="12345abc1234" size="20" maxlength="30">
+    <br>
+    <form >
+        <p>Đăng nhập</p>
+        <input type="text" name="txt_DangNhap">
+        <p>Mật khẩu</p>
+        <input type="password" name="txt_Password">
+    </form>
+    <br><hr>
+    <!--Kết thúc phần Password field -->
+
+    <!-- Hidden Text field (type = "hidden")
+        <input  type="hidden" 
+            name="string"
+            size="variant"
+            maxlength="long"
+            tabindex="integer"
+            value="string" 
+            id=""> 
+    -->
+    <h1>Hidden Text Field</h1>
+    <span>Ví dụ:</span>
+    <input type="hidden" name="txt_Hidden" value="This is hidden text. Your can't see.">
+    <br><hr>
+    <!--Kết thúc phần Hidden texy field -->
+
+    <!-- Checkbox field (type = "hidden")
+        <input  type="checkbox" 
+                name="text"
+                value="text" 
+                [checked]
+                id=""> 
+    -->
+    <h1>Check Box Field</h1>
+    <span>Ví dụ:</span>
+    <form>
+        <p>Check box group:</p>
+        Anh văn: <input type="checkbox" name="chk_Languages" value="En"> <br>
+        Trung: <input type="checkbox" name="chk_Languages" value="Chz" checked> <br>
+        Nhật:<input type="checkbox" name="chk_Languages" value="Jp"> <br>
+    </form>
+    <br><hr>
+    <!--Kết thúc phần Check Box field -->
+
+    <!-- Radio Button field (type = "radio")
+        <input  type="radio" 
+                name="text"
+                value="text" 
+                [checked]
+                id="">  
+    -->
+    <h1>Radio Buttonn Field</h1>
+    <span>Ví dụ:</span>
+    <p><b>Một lựa chọn: cùng name</b></p>
+    <form >
+        Radio Button Group: <br>
+        Nam: <input type="radio" name="rd_sex" value="nam" checked> <br>
+        Nu: <input type="radio" name="rd_sex" value="nu" checked> <br>
+    </form>
+    <br>
+    <p><b>Nhiều lựa chọn: khác name</b></p>
+    <form >
+        Radio Button Group: <br>
+        Nam: <input type="radio" name="rd_sex1" value="nam" checked> <br>
+        Nu: <input type="radio" name="rd_sex2" value="nu" checked> <br>
+    </form>
+    <br><hr>
+    <!--Kết thúc phần Radio Buttion field -->
+
+    <!-- File Upload Control (type = "file")
+        <form action="..." method="post" enctype="nultipart/form-data" name="...">
+            <input type="file" name="..." id="">
+        </form>
+    -->
+    <h1>File Upload Control</h1>
+    <span>Ví dụ:</span>
+    <form action="frmMain" method="post" enctype="nultipart/form-data">
+        <input type="file" name="FileUpload" id="">
+    </form>
+    <br><hr>
+    <!--Kết thúc phần File Upload Control -->
+        
+    <!-- Submit Botton (type = "submit")    MỖI FORM CHỈ CÓ "DUY NHẤT" 1 NÚT SUBMIT
+        <input type="submit" name="..." value="...">
+    -->
+    <h1>Submit Botton</h1>
+    <span>Ví dụ:</span>
+    <input type="submit" name="btn_Send" value="Send">
+    <br><hr>
+    <!--Kết thúc phần Submit Botton -->
+
+    <!-- Reset Botton (type = "reset")   
+        <input type="reset" name="..." value="...">
+    -->
+    <h1>Reset Botton</h1>
+    <span>Ví dụ:</span>
+    <input type="reset" name="btn_Reset" value="Reset">
+    <br><hr>
+    <!--Kết thúc phần Reset Botton -->
+
+    <!-- Botton (type = "button")    
+        <input type="button" name="..." value="..." onclick="script">
+    -->
+    <h1>Botton</h1>
+    <span>Ví dụ:</span>
+    <input type="button" name="btn_Normal" value="Press Me!"
+            onclick="alert('Hello from JavaScript');">
+    <br><hr>
+    <!--Kết thúc phần Botton -->
+
+    <!-- Multiline Textfield    (Textarea)
+        <textarea   cols="long"
+                rows="long"
+                disabled
+                name="string"
+                readonly
+                tabindex="integer"
+                wrap="HARD / SOFT"
+                id="">
+        </textarea>
+    -->
+    <h1>Multiline Textfield</h1>
+    <span>Ví dụ:</span>
+    <form>
+        <textarea   cols="20" rows="5" wrap="soft" >This is a text on multiline.
+        </textarea>
+    </form>
+    <br><hr>
+    <!--Kết thúc phần Multiline Textfield -->
+        
+    <!-- Combobox - Dropdown Box    (Select)
+        <select name="...">
+            <optgroup label="...">
+                <option [selected] value="..."> ... </option>
+                ...
+            </optgroup>
+
+            <option [selected] value="..."> ... </option>
+            ...
+        </select>
+    -->
+    <h1>Combobox - Dropdown Box</h1>
+    <p>Ví dụ:</p>
+    <form>
+        <select name="DSSoftware">
+            <optgroup label="Multimedia">
+                <option  value="WM10">Window Media 10</option>
+                <option  value="JA9">Jet Audio 9</option>
+            </optgroup>
+
+            <optgroup label="Operation System">
+                <option value="WXP">Window XP</option>
+                <option value="WXPSP2">Window XP SP2</option>
+                <option value="WVT">Window Vista</option>
+            </optgroup>
+
+            <option selected value="Office07">Office 2007</option>
+        </select>
+    </form>
+    <br><hr>
+    <!--Kết thúc phần Combobox - Dropdown Box -->
+
+    <!-- Phương thức Get/Post -->
+    <h1>GET/POST</h1>
+    <h2>Get:</h2>
+    <!--
+        - GET: phụ thuộc ULR (Action trong Form)
+            + Tối Thiểu (min):
+                Firefox: 100.000 ký tự
+                Safari: 80.000 ký tự
+                Opera: 190.000 ký tự
+            
+            + Tối Đa (max):
+                IE: 2.048 ký tự
+                Apache Server: 8.192 ký tự
+                IIS Server: 16.384 ký tự
+    -->
+    <p>Demo:</p>
+    <form action="proSend.asp" method="get"> <!-- proSend.asp{?txt_Pass=123456&sbt_Send=Send} -->
+        Test GET Method <br>
+        <input type="password" name="txt_Pass" value="123456"> <br>
+        <input type="checkbox" name="chk_Accept"> Accept <br>
+        <input type="submit" name="sbt_Send" value="Send"> 
+    </form>
+    <br>
+    <h2>Post:</h2>
+    <!--
+        - POST: truyền ngầm (Action trong Form),
+        chỉ sử dụng khi Action chỉ định đến trang web thuộc dạng web "có mã lệnh xử lý trên Server"
+        Tính bảo mật CAO hơn
+    -->
+    <p>Demo:</p>
+    <form action="proSend.asp" method="post"> <!-- proSend.asp -->
+        Test POST Method <br>
+        <input type="password" name="txt_Pass" value="123456"> <br>
+        <input type="checkbox" name="chk_Accept"> Accept <br>
+        <input type="submit" name="sbt_Send" value="Send"> 
+    </form>
+
+    <!--Kết thúc phần Phương thức Get/Post -->
+</body>
+</html>

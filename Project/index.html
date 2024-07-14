@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-course</title>
+
+    <!-- Link bootstrap, jquery -->
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Leaflet MAP -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <!-- Css file -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!-- Container (Navigation Top Section) -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">GIỚI THIỆU</a></li>
+            <li><a href="#services">DỊCH VỤ</a></li>
+            <li><a href="#portfolio">DỰ ÁN</a></li>
+            <li><a href="#pricing">GIÁ</a></li>
+            <li><a href="#contact">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Container (Navigation Top Section) -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <h1 style="text-transform: uppercase">Project Course</h1>
+      <p>Dự án lập trình theo mẫu có sẵn</p>
+      <form class="form-inline">
+        <input
+          type="email"
+          class="form-control"
+          size="50"
+          placeholder="Nhập địa chỉ email của bạn"
+        />
+        <button type="button" class="btn btn-danger">Đăng ký theo dõi</button>
+      </form>
+    </div>
+    <!-- End Jumbotron -->
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>Giới thiệu Project</h2>
+          <br />
+          <h4>
+            Project - Bên cạnh sản phẩm tâm huyết - Dự án này được lập trình
+            theo NPXweb Official chúng tôi còn là đơn vị gia công phần mềm cho
+            các công ty nước ngoài với những sản phẩm mang nét khác biệt và theo
+            từng đơn đặt hàng riêng lẻ.
+          </h4>
+          <br />
+          <p>
+            Chúng tôi cam kết đến những sản phẩm chất lượng cao nhất, hiện đại
+            nhất, thân thiện với người dùng và Project đánh giá cao công việc
+            bảo trì sau khi bàn giao sản phẩm cho khách hàng.
+          </p>
+          <br />
+          <button class="btn btn-default btn-lg">Liên hệ với chúng tôi</button>
+        </div>
+        <div class="col-sm-4" style="text-align: center">
+          <span class="glyphicon glyphicon-signal logo"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-grey">
+      <div class="row">
+        <div class="col-sm-4" style="text-align: center">
+          <span class="glyphicon glyphicon-globe logo slideanim"></span>
+        </div>
+        <div class="col-sm-8">
+          <h2>Giá trị của Project mang lại</h2>
+          <br />
+          <h4>
+            <strong>Sứ mệnh:</strong> Đơn vị tiên phong tại VN về lĩnh vực đào
+            tạo lập trình trực tuyến. Đơn vị gia công phần mềm với những sản
+            phẩm chất lượng, uy tin cho khách hàng.
+          </h4>
+          <br />
+          <p>
+            <strong>Tầm nhìn:</strong> Bên cạnh các hệ thống e-learning cho lập
+            trình, chúng tôi còn có những website để cho các học viên học tập và
+            cho những ngành nghề khác và cho nhiều đơn vị khác trong nước. Sau
+            khi hoàn thiện trong nước, Project - Chúng tôi sẽ mở rộng ra các thị
+            trường Đông Nam Á và thế giới.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Container (About Section) -->
+
+    <!-- Container (Service Section) -->
+    <div id="services" class="container-fluid text-center">
+      <h2>Dịch vụ</h2>
+      <h4>Chúng tôi cung cấp các dịch vụ sau:</h4>
+      <br />
+      <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-off logo-small"></span>
+          <h4>Elearning-Framework</h4>
+          <p>Phần mềm khung dạy trực tuyến.</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-heart logo-small"></span>
+          <h4>Web-Development</h4>
+          <p>Chúng tôi phát triển website.</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-lock logo-small"></span>
+          <h4>Web-Hosting</h4>
+          <p>Chúng tôi cung cấp dịch vụ hosting website.</p>
+        </div>
+      </div>
+      <br /><br />
+      <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-certificate logo-small"></span>
+          <h4>Hệ thống CRM</h4>
+          <p>Hệ thống quản trị CRM</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-leaf logo-small"></span>
+          <h4>Web-Design</h4>
+          <p>Chúng tôi thiết kế website.</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-wrench logo-small"></span>
+          <h4>Web-App</h4>
+          <p>Chúng tôi phát triển ứng dụng web.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Container (Service Section) -->
+
+    <!-- Container (Portfolio Section) -->
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+      <h2>Dự án tiêu biểu</h2>
+      <br />
+      <h4>Chúng tôi đã thực hiện các dự án sau:</h4>
+      <br />
+      <div class="row text-center slideanim">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img
+              src="../Image/abt-1.jpg"
+              alt="Paris"
+              width="400"
+              height="300"
+            />
+            <p><strong>Dự án 1</strong></p>
+            <p>Dự án web 1</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img
+              src="../Image/abt-2.jpg"
+              alt="New York"
+              width="400"
+              height="300"
+            />
+            <p><strong>Dự án 2</strong></p>
+            <p>Dự án web 2</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img
+              src="../Image/abt-3.jpg"
+              alt="San Francisco"
+              width="400"
+              height="300"
+            />
+            <p><strong>Dự án 3</strong></p>
+            <p>Dự án web 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Container (Portfolio Section) -->
+
+    <!-- Container (Slides Section) -->
+    <h2>Khách hàng nói gì về chúng tôi</h2>
+    <div
+      id="myCarousel"
+      class="carousel slide text-center"
+      data-ride="carousel"
+    >
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>"Cảm ơn Project đã mang lại những khóa học tuyệt vời.</h4>
+        </div>
+        <div class="item">
+          <h4>"Project đã giúp tôi học được rất nhiều điều mới mẻ."</h4>
+        </div>
+        <div class="item">
+          <h4>"Hệ thống Project làm chúng tôi ấn tượng ."</h4>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a
+        class="left carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-left"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="right carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-right"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- End Container (Slides Section) -->
+
+    <!-- Container (Pricing Section) -->
+    <div id="pricing" class="container-fluid">
+      <div class="text-center">
+        <h2>Bảng giá</h2>
+        <h4>Chọn giá mà bạn muốn xây dựng website</h4>
+      </div>
+      <div class="row slideanim">
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h1>Basic</h1>
+            </div>
+            <div class="panel-body">
+              <p><strong>20</strong> abc</p>
+              <p><strong>15</strong> ad</p>
+              <p><strong>5</strong></p>
+              <p><strong>2</strong> Sit</p>
+              <p><strong>Endless</strong> Amet</p>
+            </div>
+            <div class="panel-footer">
+              <h3>$10.000</h3>
+              <h4>mỗi tháng</h4>
+              <button class="btn btn-lg">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h1>Pro</h1>
+            </div>
+            <div class="panel-body">
+              <p><strong>50</strong> Lorem</p>
+              <p><strong>25</strong> Ipsum</p>
+              <p><strong>10</strong> Dolor</p>
+              <p><strong>5</strong> Sit</p>
+              <p><strong>Endless</strong> Amet</p>
+            </div>
+            <div class="panel-footer">
+              <h3>$35.000</h3>
+              <h4>mỗi tháng</h4>
+              <button class="btn btn-lg">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h1>Max</h1>
+            </div>
+            <div class="panel-body">
+              <p><strong>100</strong> Lorem</p>
+              <p><strong>50</strong> Ipsum</p>
+              <p><strong>25</strong> Dolor</p>
+              <p><strong>10</strong> Sit</p>
+              <p><strong>Endless</strong> Amet</p>
+            </div>
+            <div class="panel-footer">
+              <h3>$50.000</h3>
+              <h4>mỗi tháng</h4>
+              <button class="btn btn-lg">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Container (Pricing Section) -->
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+      <h2>LIÊN HỆ</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <p>
+            Hãy liên hệ với chúng tôi, chúng tôi sẽ trả lời trong vòng 8 giờ
+          </p>
+          <p>
+            <span class="glyphicon glyphicon-map-marker"></span> Đà Nẵng, Việt
+            Nam
+          </p>
+          <p>
+            <span class="glyphicon glyphicon-phone"></span> (+84) 387-631-548
+          </p>
+          <p>
+            <span class="glyphicon glyphicon-envelope"></span>
+            dinhsyquocdoanh@gmal.com
+          </p>
+        </div>
+        <div class="col-sm-7 slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Tên của bạn"
+                type="text"
+                required
+              />
+            </div>
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email của bạn"
+                type="email"
+                required
+              />
+            </div>
+          </div>
+          <textarea
+            class="form-control"
+            name="comments"
+            id="comments"
+            placeholder="Ghi chú"
+            rows="5"
+          ></textarea
+          ><br />
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">
+                Gửi yêu cầu
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Google Maps -->
+    <div id="map" style="height: 400px; width: 100%"></div>
+    <!-- End Container (Contact Section) -->
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p>Project với responsive, bootstrap hay!!!</p>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

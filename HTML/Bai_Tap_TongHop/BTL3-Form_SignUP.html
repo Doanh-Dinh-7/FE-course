@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up-Form-HTML</title>
+</head>
+<body>
+    <div id="container">
+        <form action="abc.py" method="post" style="width:500px; margin:10px auto; background: #e0e6ff40; border-radius: 10px; padding:5px; padding-left: 30px; padding-right: 35px; padding-bottom: 50px">
+            <h1 style="text-align:center;"> Sign Up </h1>
+
+            <!-- Phần 1 Info-->
+            <span style="display: inline-block; background: #4cca86; color: white; padding: 4px 13px 6px 12px; border-radius: 100%; font-size: 21px;">1</span> <span style="font-size: 20px; font-weight: bold;">Your bassic info</span>
+            <br>
+            <span>Name:</span>
+            <br>
+            <input type="text" name="txt_UserName" placeholder="Input your username" style="margin-top: 10px; margin-bottom: 20px; width: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 5px;">
+            <br>
+            <span>Email:</span>
+            <br>
+            <input type="text" name="txt_Email" placeholder="Input your Email" style="margin-top: 10px; margin-bottom: 20px; width: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 5px;">
+            <br>
+            <span>Password:</span>
+            <br>
+            <input type="password" name="txt_PassWord" placeholder="Input your password" style="margin-top: 10px; margin-bottom: 20px; width: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 5px;">
+            <br>
+            <span>Age:</span>
+            <br>
+            <input type="radio" name="rd_Age" value="under13"> <span>Under 13</span>
+            <br>
+            <input type="radio" name="rd_Age" value="over13"> <span>13 or older</span>
+            
+            <br><br><br>
+
+            <!-- Phần 2 Profile-->
+            <span style="display: inline-block; background: #4cca86; color: white; padding: 4px 13px 6px 12px; border-radius: 100%; font-size: 21px;">2</span> <span style="font-size: 20px; font-weight: bold;">Your profile</span>
+            <br>
+            <span>Biography:</span>
+            <br>
+            <textarea name="txta_Bio" cols="64" rows="5" placeholder="Input your Bio here" style="margin-top: 10px; margin-bottom: 20px; padding-top: 10px; padding-bottom: 10px; padding-left: 5px;"></textarea>
+            <br><br><br>
+            <span>Job Role:</span>
+            <br>
+            <select name="slt_jobrole" style="margin-top: 10px; margin-bottom: 20px; width: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 5px;">
+                <optgroup label="Web">
+                    <option value="frontend_dev">Front-End Developer</option>
+                    <option value="php_dev">PHP Developer</option>
+                    <option value="pyhton_dev">Python Developer</option>
+                    <option value="rails_dev">Rails Developer</option>
+                    <option value="web_des">Web Design</option>
+                    <option value="wordpress_dev">WordPress Developer</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option value="androild_dev">Androild Developer</option>
+                    <option value="ios_dev">iOS Developer</option>
+                    <option value="mobile_des">Mobile Design</option>
+                </optgroup>
+                <optgroup label="Business">
+                    <option value="bussiness_owner">Bussiness Owner</option>
+                    <option value="freelancer">Freelancer</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option value="secretary">Secretary</option>
+                    <option value="maintenance">Maintenance</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <span>Interests:</span>
+            <br>
+            <input type="checkbox" name="chk_interes" value="developement"><span>Developement</span>
+            <br>
+            <input type="checkbox" name="chk_interes" value="design"><span>Design</span>
+            <br>
+            <input type="checkbox" name="chk_interes" value="bussiness"><span>Bussiness</span>
+            <br>
+            <br>
+            <input type="submit" name="btn_signup" value="Sign Up Now" style="padding: 20px; width: 100%; text-align: center; background: #3dc772; border:none; border-radius: 5px; color: white; font-size:20px;">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+#container{
+    margin: 0 auto;
+    width: 500px;
+    height:  100%;
+    background: rgba(81, 226, 189, 0.93);
+}
+
+/* TAB */
+.tab {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background: #d4b948;
+    margin-left: 5px;
+    padding: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+a.tab:hover{
+    background: #EEED99 !important;
+}
+#dangnhap{
+    background: #e0e0e0;
+}
+.div_form{
+    width: 450px;
+    margin: 0 auto;
+   /* background: rebeccapurple; */
+}
+#div_dangki{
+    height:  100%;
+}
+#div_dangnhap{
+    height:  100%;
+    /* background: yellow; */
+    display: none;
+}
+/* End TAB */
+
+/* ĐĂNG KÍ */
+
+#title_menu{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: -6px;
+}
+
+hr{
+    height: 1px;
+    background: #354732;
+}
+
+.title_type{
+    padding-left: 20px;
+    font-size: 17px;
+}
+#username{
+    margin-right: 44px;
+}
+#pass{
+    margin-right: 80px;
+}
+#email{
+    margin-right: 104px;
+}
+#age{
+    margin-right: 113px;
+}
+#job{
+    margin-right: 57px;
+}
+.input_type{
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#slt_job{
+    text-align: center;
+    width: 193px;
+}
+#sex{
+    margin-right: 90px;
+}
+.radio_type{
+    transform: scale(2.2);
+    padding: 10px;
+    margin-top: 17px;
+    margin-bottom: 4px;
+}
+#rd_male{
+    margin-right: 25px;
+}
+#rd_female{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#btn_dangki{
+    background: #dcbf43;
+    border: none;
+    margin-top: 20px;
+    margin-left: 170px;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#btn_dangki:hover{
+    background: #EEED99 !important;
+}
+#have_DN{
+    text-align: center;
+    margin-top: 8px;
+    padding-bottom: 8px;
+}
+#have_DN a{
+    text-decoration: none;
+    color: #146bb4;
+}
+
+/* End ĐĂNG KÍ */
+
+/* ĐĂNG NHẬP */
+#chk_remember{
+    margin-left: 168px;
+}
+#quenmatkhau{
+    margin-top: 10px;
+    margin-left: 178px
+}
+#quenmatkhau a{
+    text-decoration: none;
+    color: #d70000;
+}
+
+
+#btn_dangnhap{
+    background: #dcbf43;
+    border: none;
+    /* margin-top: 10px; */
+    margin-left: 170px;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#btn_dangnhap:hover{
+    background: #EEED99 !important;
+}
+
+#p_thongbao{
+    color: red;
+    padding: 5px;
+    background: yellow;
+    display: none;
+    text-align: center;
+    margin-right: 30px;
+}

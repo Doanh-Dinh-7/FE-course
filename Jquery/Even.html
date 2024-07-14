@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even - jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Sự kiện click
+            $("p").click(function(){
+                $(this).hide();
+            });
+
+            // Sự kiện mouseenter
+            $("h2").mouseenter(function(){
+                $(this).fadeTo("fast", 0.5);
+            });
+
+            // Sự kiện mousedown, mouseup same same click
+
+            // Sự kiện hover
+            $("table tr th:first").hover(function(){
+                $(this).hide();
+            });
+
+
+            // Sự kiện forcus
+            $("#inp").focus(function(){
+                $(this).css("background-color", "yellow");
+            });
+
+            // Sự kiện blur
+            $("#inp").blur(function(){
+                $(this).css("background-color", "gray");
+            });
+
+
+
+        });
+    </script>
+
+    <style>
+        th, td {
+            border: 1px outset   gray;
+        }
+    </style>
+</head>
+<body>
+    <button style="background: red; font-size:20px; padding: 5px; ">Demo Selector</button>
+    <br>
+    <br>
+    <input type="text" id="inp">
+    <br>
+    <h2>Học lập trình theo dự án thực tiễn</h2>
+
+    <p class="test">Học lập trình tại</p>
+    <p>Chúng tôi truyền đam mê và cảm hứng cho việc khởi nghiệp của bạn.</p>
+
+    <p>Danh sách .net</p>
+    <ul>
+        <li>C# căn bản - nâng cao</li>
+        <li>Phần mềm 3 lớp</li>
+        <li>Asp.net căn bản - nâng cao</li>
+    </ul>
+
+    <p>Danh sách Android</p>
+    <ul>
+        <li>Android căn bản</li>
+        <li>Android nâng cao</li>
+        <li>Android toàn tập</li>
+    </ul>
+
+    <p><a href="https://www.facebook.com/Raymondtime.answerto.all" target="_blank">Facebook is here !!!</a></p>
+    <p><a href="https://www.youtube.com/watch?v=YrV9u9TmgyI&list=PLKIdasUW9dokYq5Wz98OzGJ-8VHoWzwhW&index=69">Jquery phần 2</a></p>
+
+    <table style="border-collapse: collapse; margin: 20px 0; font-size: 18px; text-align: left; border: 1px outset   gray;">
+        <tr>
+            <th>Khóa học</th>
+            <th>Công nghệ</th>
+        </tr>
+        <tr>
+            <td>HTML, CSS, Bootstrap</td>
+            <td>WEB</td>
+        </tr>
+
+        <tr>
+            <td>PHP căn bản nâng cao</td>
+            <td>WEB</td>
+        </tr>
+        <tr>
+            <td>Android căn bản - nâng cao</td>
+            <td>Mobile</td>
+        </tr>
+        <tr>
+            <td>Lập trình IOS</td>
+            <td>Mobile</td>
+        </tr>
+    </table>
+</body>
+</html>

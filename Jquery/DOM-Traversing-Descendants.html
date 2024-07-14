@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Traversing - Descendants</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        // move up (ancestors) // Di chuyển lên thẻ cha
+            // try vấn đến cha trực tiếp
+            $("b").parent().css({"color":"red", "border":"2px solid red"});
+
+            // truy vấn đến all chứa nó
+            //$("b").parents().css({"color":"red", "border":"2px solid green"});
+            
+            // truy vấn đến thằng chứa nó có giới hạn
+            $("b").parents("#div1").css({"color":"red", "border":"2px solid yellow"});
+
+        // down (descendants) // Di chuyển xuống thẻ con/cháu
+            // try vấn đến con trực tiếp
+            $("#div2").children().css({"color":"red", "border":"2px solid green"});
+           
+            // truy vấn đến con 2
+            $("#con_2").children("#chau_2").css({"color":"red", "border":"2px solid yellow"});
+
+            // truy vấn đến con/cháu
+            $("#div2").find("i").css({"color":"red", "border":"2px solid blue"});
+
+            // truy vấn đến all con
+            $("#div2").find("*").css({"color":"black"});
+
+        // sideways (siblings) // Di chuyên sang các ae kế cận
+            // truy vấn đến ae kế cận
+            $("#h2-1").siblings().css({"color":"red", "border":"2px solid red"});
+            $("#h2-1").siblings("p").css({"color":"green", "border":"2px solid green"});
+
+            // truy vấn đến cận DƯỚI
+            $("#p1-2").next().css({"color":"red", "border":"2px solid yellow"});
+
+            // truy vấn tất cả cận DƯỚI
+            $("#h5-2").nextAll().css({"color":"blue", "border":"2px solid blue"});
+
+            // truy vấn từ cận DƯỚI đến ..
+            $("#h2-2").nextUntil("#h5-2").css({"color":"red", "border":"2px solid blue"});
+            
+            // truy vấn đến cận TRÊN
+                // tương tự có prev(), prevAll() và prevUntill()
+        });
+    </script>
+    <style>
+        #body *{
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+        .ancestors *{
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+        .descendants *{
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+        .siblings *{
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="body">body (ông tằng)
+
+    <h3 style="border: none; color: black; ">MOVE UP</h3>
+
+    <div id="div1" style="width: 500px; " class="ancestors"> div (ông tổ)
+        <ul>ul (ông nội)
+            <li>li (cha trực tiếp)
+                <b>bold (hiện tại)</b>
+            </li>
+        </ul>
+    </div>
+
+    <h3 style="border: none; color: black; ">DOWN</h3>
+   
+    <div id="div2" style="width: 500px; " class="descendants"> div (hiện tại)
+        <ul id="con_1">ul (con trực tiếp 1)
+            <li>li (cháu)
+                <i>italic (chắt)</i>
+            </li>
+        </ul>
+        <ul id="con_2">ul (con trực tiếp 2)
+            <li id="chau_1">li (cháu 1)
+                <i>italic (chắt)</i>
+            </li>
+            <li id="chau_2">li (cháu 1)
+                <i>italic (chắt)</i>
+            </li>
+        </ul>
+    </div>
+
+    <h3 style="border: none; color: black; ">SIDEWAYS</h3>
+
+    <div id="div3" style="width: 500px; " class="siblings"> div (ông)
+        <ul id="cha_1"> ul (cha 1)
+            <p id="p1-1">p</p>
+            <span id="span-1">span</span>
+            <h2 id="h2-1">h2 (hiện tại 1)</h2>
+            <h3 id="h3-1">h3</h3>
+            <p id="p2-1">p</p>
+        </ul>
+        <ul id="cha_2"> ul (cha 2)
+            <p id="p1-2">p</p>
+            <span id="span-2">span</span>
+            <h1>h1</h1>
+            <h2 id="h2-2">h2</h2>
+            <h3 id="h3-2">h3</h3>
+            <h4>h4</h4>
+            <h5 id="h5-2">h5</h5>
+            <h6>h6</h6>
+            <p id="p2-2">p</p>
+        </ul>
+        
+    </div>
+
+</div>
+</body>
+</html>

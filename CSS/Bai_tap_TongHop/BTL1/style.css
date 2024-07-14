@@ -1,0 +1,236 @@
+/*BODY*/
+body{
+    margin: 0;
+}
+
+
+/*TOP*/
+.top{
+    width: 100%;
+    height: 60px;
+    background: black;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.giohang{
+    float: right;
+    color: white;
+    padding-top: 7px;
+    text-align: center;
+}
+.giohang p{
+    margin-top: 1px;
+    padding: 0;
+}
+.giohang a:link, .giohang a:visited{
+    color: white;
+    text-decoration: none
+}
+
+
+/*LOGO*/
+.logo{
+    text-align: center;
+    border-bottom: solid 1px #DAD9D9;
+}
+.logo a:link, .logo a:visited{
+    color: black;
+    text-decoration: none
+}
+
+
+/*MENU*/
+#div_left{
+    width: 70%;
+    height: 50px;
+    float: left;
+}
+#div_right{
+    width: 30%;
+    height: 50px;
+    float: left;
+    position: relative;
+}
+
+#div_left ul li {
+    float: left;
+    padding-right: 47px;
+    font-size: 17px;
+    list-style-type: none;
+}
+
+#div_left ul li a{
+    color: black;
+    text-decoration: none
+}
+
+#div_left ul li a:hover{
+    color: green;
+    text-decoration: none
+}
+#contain_search{
+    position: relative;
+    padding-top: 10px;
+    float: right;
+}
+
+#txt_search{
+    padding: 6px;
+    border: 0;
+}
+
+#btn_search{
+    background: url("../Images/search.png") no-repeat;
+    display: inline-block;
+    padding-right: 14px;
+    padding-left: 9px;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 2%;
+}
+
+.menu{
+    padding-top: 10px;
+}
+
+
+/*BANNER*/
+.banner img{
+    width: 100%;
+}
+
+
+/* 3 SP TIEU BIEU */
+.about{
+    height: 300px;
+    padding-top: 50px;
+}
+
+.product_interes{
+    float: left;
+    padding-right: 51px;
+    padding-left: 52px;
+}
+
+
+/* PRODUCT */
+.one_product{
+    border: solid 1px #E2E2E2;
+    text-align: left;
+    float: left;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 29px;
+    font-weight: bold;
+    margin-bottom: 69px;
+}
+.view_product{
+    font-size: 15px;
+    color: gray;
+    padding-top: 2px;
+}
+.percent{
+    float: right;
+}
+
+
+/* INFORMATION*/
+.info{
+    float: left;
+    width: 25%;
+    height: auto;
+    
+}
+
+.info ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.info ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info ul li a{
+    text-decoration: none;
+}
+
+.info ul li a:link, .info ul li a:visited{
+    color: gray;
+}
+
+.info ul li a:hover{
+    color: green;
+}
+
+span.social{
+    width: 32px;
+    height: 31px;
+    display: inline-block;
+}
+
+#facebook{
+    background: url(../Images/5-icon.png);
+    background-position: 0 0;
+}
+#twitter{
+    background: url(../Images/5-icon.png);
+    background-position: -33px 0;
+}
+
+#instagram{
+    background: url(../Images/5-icon.png);
+    background-position: -68px 0;
+}
+
+.name_social{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -24px;
+    padding-left: 10px;
+}
+
+#phone{
+    font-size: 25px;
+}
+#last_info.info{
+    margin-bottom: 35px;
+}
+.phan_vung{
+    width: 100%;
+}
+
+
+/* FOOTER */
+.footer{
+    float: left;
+    width: 50%;
+    margin-top: 25px;
+    height: 150px;
+}
+
+.footer input{
+    padding: 11px;
+    margin-left: 10px;
+    margin-top: 17.5px;
+    background: white;
+}
+
+#txt_client_email{
+    padding-right: 80px;
+}
+#btn_subscribe{
+    text-align: center;
+}
+
+#footer_right.footer{
+    margin-top: 55px;
+}

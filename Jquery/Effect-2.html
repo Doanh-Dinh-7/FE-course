@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide/ Animate/ Stop/ Chuỗi sự kiện (Chain) - Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Có thể thêm giá trị vào trong ngoặc (mili Second) và [slow, fast]
+
+            // Hiệu ứng hide
+            $("#hide").click(function(){
+                $("p").hide(); //
+            });
+
+            // Hiệu ứng show
+            $("#show").click(function(){
+                $("p").show(); //
+            });
+
+            // Hiệu ứng toggle
+            $("#toggle").click(function(){
+                $("p").toggle(); //
+            });
+
+            // Slide: Down, Up, Toggle
+            // Hiệu ứng SlideDown
+            $("#slideDown").click(function(){
+                $("#penel").slideDown();
+            });
+
+            // Hiêu ứng SlideUp
+            $("#slideUp").click(function(){
+                $("#penel").slideUp();
+            });
+
+            // Hiệu ứng SlideToggle
+            $("#slideToggle").click(function(){
+                $("#penel").slideToggle();
+            });
+
+
+            // Hiệu ứng Animate:
+            // $(selector).animate({params}, speed);
+            $("#animate").click(function(){
+                $("#div1").animate({left: '250px'});
+            });
+
+            $("#animate").click(function(){
+                $("#div2").animate({
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '250px',
+                    width: '250px'
+                }, 5000);
+            });
+
+            // Hiệu ứng Stop
+            $("#stop").click(function(){
+                $("#div2").stop();
+            });
+
+            // Chuõi hiệu ứng
+            $("#chain").click(function(){
+                $("#div3").slideDown(2000)
+                .animate({left: '250px'}, 2000);
+                    
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="flip" style="background-color: aqua; padding: 5px;" >Học lập trình chuyên sâu tại raymond.by.time |^|</p>
+
+    <div id="penel" style="display:block; border: solid 1px gray; border-radius: 5px; background-color:burlywood; margin-bottom:25px;">
+        <p style="text-align: center;">Hệ thống khóa học vân vân</p>
+        <p style="text-align: center;">Đăng ký ngay hôm nay</p>
+    </div>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <br>
+    <button id="slideDown">Slide Down</button>
+    <button id="slideUp">Slide Up</button>
+    <button id="slideToggle">Slide Toggle</button>
+    <br>
+    <button id="animate">Animate</button>
+    <button id="stop">Stop</button>
+    <button id="chain">Chain</button>
+
+
+    <div id="div1" style="position:relative; margin-top: 20px; width:80px; height:80px; background-color:red; display:block;"></div>
+    <br>
+    <div id="div2" style="position:relative; width:80px; height:80px; background-color:green; display:block;"></div>
+    <br>
+    <div id="div3" style="position:relative; width:80px; height:80px; background-color:blue; display:none;"></div>
+    <br>
+
+
+</body>
+</html>

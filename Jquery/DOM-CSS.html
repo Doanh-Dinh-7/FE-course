@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Thao tác CSS: addClass(), removeClass(), toggleClass(), css()
+                // addClass(): thêm 1 or nhiều class -> thẻ đang đc chọn
+                $("#btn1").click(function(){ // thêm 1 class
+                    $("h1, h2, p").addClass("red");
+                    $("div").addClass("important");
+                });
+
+                $("#btn2").click(function(){ // thêm nhiều class
+                    $("#div1").addClass("important red");
+                });
+
+                // removeClass(): xóa 1 or nhiều class -> thẻ đang đc chọn
+                $("#btn3").click(function(){
+                    $("h1, h2, p").removeClass("red");
+                });
+
+                // toggleClass(): thêm/xóa 1 or nhiều class -> thẻ đang đc chọn
+                $("#btn4").click(function(){
+                    $("h1, h2, p").toggleClass("red");
+                });
+
+            // css(): Gán or lấy các thuộc tính style
+                // css("propertyname"); // LẤY GIÁ TRỊ THUỘC TÍNH
+                // css("propertyname", "value"); // GÁN GIÁ TRỊ THUỘC TÍNH
+                // css({"propertyname_1": "value_1", "propertyname_2": "value_2",...}); // GÁN NHIỀU GIÁ TRỊ CHO CÁC THUỘC TÍNH
+
+                // LẤY GIÁ TRỊ THUỘC TÍNH
+                $("#btn5").click(function(){
+                    alert("Background color = " + $("#dm3").css("background-color"));
+                });
+
+                // GÁN GIÁ TRỊ THUỘC TÍNH cho thẻ P
+                $("#btn6").click(function(){
+                    $("#dm4").css("background-color", "yellow");
+                });
+
+                // GÁN NHIỀU GIÁ TRỊ CHO CÁC THUỘC TÍNH
+                $("#btn7").click(function(){
+                    $("#dm5").css({"background-color": "green", "font-size": "150%",
+                    "font-weight": "bold", "color": "white"});
+                });
+        });
+    </script>
+    <style>
+        .important{
+            font-weight: bold;
+            font-size: xx-large;
+            color: blue;
+        }
+
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demo text heading 1</h1>
+    <h2>Demo 2</h2>
+    <p>Doanh Đinh</p>
+    <p>Học lập trình trực tuyến tại >>>DĐ<<<</p>
+    <div id="div1">hệ thống học lập trình RĐ Important</div><br>
+    <br>
+    <p style="background-color: #ff0000;" id="dm3">DEMO 3</p>
+    <p style="background-color: #00ff00;" id="dm4">DEMO 4</p>
+    <p style="background-color: #0000ff;" id="dm5">DEMO 5</p>
+    
+
+    <button id="btn1">Thêm class đến các thẻ</button>
+    <button id="btn2">Thêm NHIỀU class đến các thẻ</button>
+    <button id="btn3">Xóa class</button>
+    <button id="btn4">Toggle class</button>
+    <br> <br>
+    <button id="btn5">Lấy màu BACKGROUND</button>
+    <button id="btn6">Gán giá trị màu BACKGROUND</button>
+    <button id="btn7">Gán NHIỀU thuộc tính</button>
+
+</body>
+</html>

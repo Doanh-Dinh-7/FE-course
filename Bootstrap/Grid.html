@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- 
+      container: muốn có 1 cái box trong website
+      container-fluid: muốn full màn hình 
+    -->
+    <!-- 
+      Hệ thống Grid: chia layout thành 12 CỘT
+        - 4 class:
+        - xs-: Phone
+        - sm-: Tablet (máy tính bảng)
+        - md-: Desktop
+        - lg-: Desktop LỚN hơn
+    
+        <div class="container">
+          <div class="row">
+            <div class="col-*-*"></div>
+          </div>
+          <div class="row">
+           <div class="col-*-*"></div>
+           <div class="col-*-*"></div>
+           <div class="col-*-*"></div>
+         </div>
+          <div class="row">
+            ...
+         </div>
+       </div>
+
+      Design theo tổng 12 cột cho 1 giao diện
+      Lưới chia cho các thiết bị "<= 991px" ==> .col-sm-*
+        DEMO bên dưới
+      
+      Lưới chia cho các thiết bị "992px - 1199px" ==> .col-md-*
+    -->    
+    <div class= "container">
+        <h1>Grid</h1>
+        <p>Demo chia một dòng 50%/50% trên các thiết bị. Nếu trên các thiết bị nhỏ, bootstrap sē tự kéo dãn website </p> 
+        <p>Thay đổi màn hình để thấy được kết quả của bootstrap.</p>
+         <div class= "row">
+           <div class= "col-sm-8" style="background-color: yellow;">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labor
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo CC
+           </div>
+           <div class= "col-sm-4" style="background-color:pink;">
+             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+           </div>
+         </div>
+       </div>
+      
+</body>
+</html>

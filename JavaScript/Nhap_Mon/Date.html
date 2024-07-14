@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Date</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        // d.getDate();  lấy ngày (1-31)
+        // d.getDay();    lấy ngày trong tuần (0-6)
+        // d.getFullYear(); lấy năm đầy đủ (YYYY)
+        // d.getYear(); lấy 2 số cuối của năm (YY)
+        // d.getMonth(); lấy tháng (0-11)
+        // d.getHours(); lấy số giờ (0-23)
+        // d.getMiliseconds(); lấy số mili giây (0-999)
+        // d.getMinutes(); lấy số phút (0-59)
+        // d.getSeconds(); lấy số giây (0-59)
+        // d.getTime(); thời gian đã đc chuyển đổi sang Mili giây
+        
+        
+        // Đối tượng thời gian hiện tại
+        var now = new Date();
+        alert(now);
+
+        var vnwomanDay = new Date(2015, 9 , 20); // Year, Month, Day
+        alert(vnwomanDay);
+
+        var vnwomanDayAndTime = new Date(2015, 9, 20, 12, 20, 30); //  Year, Month, Day, Hour, Minute, Second
+        alert(vnwomanDayAndTime);
+
+        alert("Ngày hôm nay: " + now);
+        alert("Ngày hôm qua: " + new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1));
+        alert("Ngày mai: " + new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1));
+        alert("Ngày mốt: " + new Date(now.getFullYear(), now.getMonth(), now.getDate() + 2));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1 - Selector</title>
+    <style>
+        /* css theo thẻ (Element selector) */
+        p{
+            color: red;
+            text-align: center;
+        }
+
+        /* css theo id (ID selector) */
+        #the_p{
+            color: blue;
+        }
+
+        /* css theo class (Class selector) */
+        .myclass{
+            text-align: center;
+            color: red;
+            background-color: yellow;
+        }
+        h1.myclass{
+            color: green;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ví dụ h1 nè</h1>
+    <p>Khóa học CSS căn bản</p>
+    <p id="the_p">Hệ thống khóa học miễn phí myclass.vn</p>
+
+    <h1 class="myclass">yellow and center-aligned heading</h1>
+    <p class="myclass">Red and center-aligned paragraph</p>
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* TEXT
+    - color: màu font
+    - text-align: căn lề
+    - text-decoration: gạch font
+    - text-indent: thụt lề đầu dòng
+*/
+
+/* FONT
+    - font-size: cơ chữ
+    - font-family: loại font chữ (arial, time new roman, ...)
+    - font-style: kiểu chữ (normal, italic, oblique)
+    - font-weight: độ đậm của chữ (normal, bold, bolder, lighter, số: 100 --> 900)
+*/
+
+/* LIST
+    - list-style-type: value  _  dấu hiển thị trước từng mục trong danh sách
+        + KO thứ tự: disc, circle, square
+        + CÓ thứ tự: 
+            dicimal: 1, 2, 3,...
+            decimal-leading-zero: 01, 02, 03,...
+            lower-roman: i, ii, iii,...
+            upper-roman: I, II, III,...
+            lower-roman: alpha, beta,...
+            lower-latin: a, b, c,...
+            upper-latin: A, B, C,...
+            amerian: 1, 2, 3,...
+
+    - list-style-image: <url> | none  _  hình ảnh hiển thị trước từng mục trong danh sách
+*/
+
+/* LINK 
+    - a:link  - chọn all lk chưa vào
+    - a:visited  - chọn all lk đã vào
+    - a:hover  - chọn lk đang kích hoạt
+    - a:active - chọn lk đang được rê chuột vào
+*/
+
+/* TABLE
+    - border-spacing: thay thế cellspacing (khoảng cách giữa các ô)
+    - border-collapse:: kẻ biên separate (cách đều), collapse (thu lại)
+    - text-algin: canh ngang (left, right, center)
+    - vertical-align: canh dọc (top, bottom, middle)
+*/
+
+/* BOX MODLE
+    - width, height: 
+    - padding, margin: 
+    - background- color, image, repeat, position
+    - border- style, color, width
+
+_________________________________
+|            "margin"           |
+|   ________________________    |
+|   |        "border"       |   |
+|   |   _________________   |   |  
+|   |   |    "padding"   |  |   |
+|   |   |  __________    |  |   |
+|   |   |  |<"width">|   |  |   |
+|   |   |  |         |   |  |   |
+|   |   |  |         |   |  |   |
+|   |   |  |_________|   |  |   |
+|   |   |________________|  |   |
+|   |_______________________|   |
+|_______________________________|
+    
+*/
+
+/* LAYOUT
+    - display:   - chỉ định cách thức hiển thị của nội dung
+    - margin: auto  - tự động canh vùng nội dung ở giữa đối tượng chứa nó
+    - max-width & min-height
+    - postion: relative (có không gian), absolute (mất ko gian), fixed (Cố định tại 1 điểm)
+    - float: left, right   - trôi về trái hoặc phải
+    - clear
+    - overflow: auto
+*/

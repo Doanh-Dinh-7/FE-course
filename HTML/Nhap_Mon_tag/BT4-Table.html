@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4 - Bảng</title>
+</head>
+<body>
+    <table background="./Image/VuiVui.JPG">
+        <!-- Thuộc tính của th và td: 
+            colspan, rowspan: giãn ô
+            background: ảnh nền
+            bgcolor: màu nền
+            align: left, right, center, justify
+            valign: top, middle, bottom, baseline
+            cellpadding: khoảng cách từ viền đến text
+            cellspacing: khoảng cách giữa các ô
+        -->
+         
+        <tr> 
+            <th>Khởi tạo 1 ô tiêu đề</th>
+            <th>Trái cây</th>
+            <th>Phần trăm</th>
+        </tr>
+        <tr>
+            <td>khởi tạo 1 ô: thứ 1</td>
+            <td>Táo</td>
+            <td>46%</td>
+        </tr>
+        <tr>
+            <td>khởi tạo 1 ô: thứ 2</td>
+            <td>Chuối</td>
+            <td>44%</td>
+        </tr>
+        <tr>
+            <td>khởi tạo 1 ô: thứ 3</td>
+            <td>khác</td>
+            <td>10%</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <table border="1" cellpadding="15">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>Bill Gate</td>
+            <td>(202) 256-3600</td>
+            <td>0844 41 45 387</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <table border="1" cellspacing="15">
+        <tr>
+            <th>Name</th>
+            <th>Telephone</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Bill Gate</td>
+            <td>(202) 256-3600</td>
+        </tr>
+        <tr>
+            <td>0844 41 45 387</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table border="1" bgcolor ="#0099FF">
+        <tr>
+            <th>Name</th>
+            <th>Telephone</th>
+            <th>Country</th>
+            <th>Center</th>  
+        </tr>
+        <tr>
+            <td rowspan="2">Bill Gate</td>
+            <td>(202) 256-3600</td>
+            <td colspan="2" rowspan="3">silicon valley - usa</td>
+        </tr>
+        <tr>
+            <td>0844 41 45 387</td>
+        </tr>
+        <tr>
+            <td>Steve Job</td>
+            <td>1-800-676-2775</td>
+        </tr>
+    </table>
+</body>
+</html>

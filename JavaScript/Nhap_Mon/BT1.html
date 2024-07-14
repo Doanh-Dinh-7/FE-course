@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện thông dụng</title>
+</head>
+<body>
+ 
+</body>
+    <script type="text/javascript">
+        function changeColor(choose){
+            var txt = document.getElementById("test");
+            if(choose == 1){ // la forcus
+                txt.style.border = "solid 4px red";
+            }
+            else{ // onBlur
+                txt.style.border = "solid 4px gray"
+            }
+        }
+
+        function thayDoiChon(){
+            var theP = document.getElementById("xuat");
+            var dropdown = document.getElementById("chon");
+            theP.innerHTML = dropdown.value;
+        }
+
+        function changeColorButton(thamso){
+            var nut = document.getElementById("nut");
+            if (thamso == 1){ // hover
+                nut.style.backgroundColor = "red";
+            } 
+            else if (thamso == 2){ // out
+                nut.style.backgroundColor = "white";
+            } 
+            else if (thamso == 3){
+                nut.style.backgroundColor = "green";
+            }
+            else{
+                nut.style.backgroundColor = "blue";
+            }
+        }
+    </script>
+    <script src="Bien.js"></script>
+
+    <input type="button" id="nut" value="click vao While" onmouseover="changeColorButton(1)" onmouseout="changeColorButton(2)"
+                                                        onmouseup="changeColorButton(3)" onmousedown="changeColorButton(4)">
+
+    <input type="button" value="click Vao DoWhile">
+    <input type="text" id="test" onFocus="changeColor(1)" onBlur="changeColor(3)">
+
+    <p id="xuat"></p>
+    <select id="chon" onchange="thayDoiChon()">
+        <option >VietNam</option>
+        <option >USA</option>
+        <option >Pháp</option>
+    </select>
+</html>

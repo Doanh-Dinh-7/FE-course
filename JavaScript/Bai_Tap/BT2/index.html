@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in - Sign up</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+    <div id="container">
+        <a id="dangki" href="#" class="tab" onclick="onDangKi()">ĐĂNG KÝ</a>
+        <a id="dangnhap" href="#" class="tab" onclick="onDangNhap()">ĐĂNG NHẬP</a>
+        <div id="div_dangki" class="div_form">
+            <form action="#" name="frm_DangKi">
+                <h2 id="title_menu">ĐĂNG KÍ THÀNH VIÊN</h2>
+                <hr>
+                <div id="div_thongbao">
+                    <p id="p_thongbao"></p>
+                </div>
+                <span class="title_type" id="username">Tên đăng nhập</span> 
+                <input type="text" id="txt_tendangnhap" class="input_type" oninput="return CheckTenDangNhap()" onclick="return CheckTenDangNhap()">
+                <br>
+                <span class="title_type" id="pass">Mật khẩu</span>
+                <input type="password" id="txt_matkhau" class="input_type" oninput="return CheckMatKhau()" onclick="return CheckMatKhau()">
+                <br>
+                <span class="title_type" id="email">Email</span>
+                <input type="text" id="txt_email" class="input_type" oninput="return checkEmail()" onclick="return checkEmail()">
+                <br>
+                <span class="title_type" id="job">Nghề nghiệp</span>
+                <select class="input_type" id="slt_job">
+                    <option value="0">Kỹ sư</option>
+                    <option value="1">Sinh viên</option>
+                    <option value="2">Giáo viên</option>
+                    <option value="3">Doanh nhân</option>
+                </select>
+                <br>
+                <span class="title_type" id="age">Tuổi</span>
+                <input type="text" id="txt_age" class="input_type" oninput="return checkTuoi()" onclick="return checkTuoi()">
+                <br>
+                <span class="title_type" id="sex">Giới tính</span>
+                <input type="radio" id="rd_male" name="sex" value="male" class="radio_type" checked>
+                <label for="rd_male">Nam</label>
+                <input type="radio" id="rd_female" name="sex" value="female" class="radio_type">
+                <label for="rd_female">Nữ</label>
+                <br>
+                <input type="button" id="btn_dangki" value="ĐĂNG KÝ">
+                <br>
+                <p id="have_DN">Bạn đã có tài khoản? Vui lòng click <a href="#" onclick="onDangNhap()">Đăng nhập</a></p>
+            </form>
+        </div>
+        <div id="div_dangnhap" class="div_form">
+            <form action="#" name="frm_DangNhap">
+                <h2 id="title_menu">ĐĂNG NHẬP</h2>
+                <hr>
+                <span class="title_type" id="username">Tên đăng nhập</span> 
+                <input type="text" id="txt_username" class="input_type" onclick="return CheckNhap()">
+                <br>
+                <span class="title_type" id="pass">Mật khẩu</span>
+                <input type="password" id="txt_pass" class="input_type">
+                <br>
+                <input type="checkbox" id="chk_remember">
+                <label for="chk_remember">Ghi nhớ lần sau</label>
+                <br>
+                <p id="quenmatkhau"><a href="#" >Quên mật khẩu?</a></p>
+                <input type="button" id="btn_dangnhap" value="ĐĂNG NHẬP">
+                <br>
+                <p id="have_DN">Bạn chưa có tài khoản? Vui lòng click <a href="#" onclick="onDangKi()">Đăng kí</a></p>
+            </form>
+        </div>
+        <form action="#" name="frm_DangKi">
+
+        </form>
+        <p id="thongbao"></p>
+    </div>
+</body>
+</html>

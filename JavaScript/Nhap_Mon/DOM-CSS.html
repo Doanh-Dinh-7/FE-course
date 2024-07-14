@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - CSS</title>
+    <script type="text/javascript">
+        function ChangeTextColor(){
+            document.getElementById("test").style.color = "red";
+        }
+
+        function ChangeBgColor(){
+            document.getElementById("test").style.backgroundColor = "Yellow";
+        }
+
+        function ChangeFontSize(){
+            document.getElementById("test").style.fontSize = "30px";
+        }
+
+        function ChangeMargin(){
+            document.getElementById("test").style.marginTop = "20px";
+        }
+    </script>
+</head>
+<body>
+    <div id="test">
+        Xin chào các bạn đến với hệ thống lập trình trực tuyến Raymond.vn 
+    </div>
+
+    <input type="button" value="Thay đổi màu text" onclick="ChangeTextColor()">
+    <br>
+    <input type="button" value="Thay đổi màu background" onclick="ChangeBgColor()">
+    <br>
+    <input type="button" value="Thay đổi Font-Size" onclick="ChangeFontSize()">
+    <br>
+    <input type="button" value="Thay đổi Vị trí" onclick="ChangeMargin()">
+    <br>
+</body>
+</html>

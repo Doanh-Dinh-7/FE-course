@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <form action="#">
+        <br>
+        Số a: <input type="text" id="soa">
+        <br>
+        Số b: <input type="text" id="sob">
+        <br>
+        Kết quả: <input type="text" id="kq">
+        <br>
+        <input type="button" value="Tính tổng" onclick="TinhTong()">
+    </form>
+
+    <script>
+        function TinhTong(){
+            var a = document.getElementById("soa");
+            var b = document.getElementById("sob");
+            var kq = document.getElementById("kq");
+
+            // NaN = Not a Number --> hàm kiểm tra số : isNaN (Chuỗi) --> là số
+            // False --> không phải số --> True
+
+            if (isNaN(a.value) || isNaN(b.value)){
+                alert("Nhập vào số a và số b");
+                return false;
+            }
+            var tong = parseFloat(a.value) + parseFloat(b.value);
+            kq.value = tong;
+
+        }
+    </script>
+</body>
+</html>

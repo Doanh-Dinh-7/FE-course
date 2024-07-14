@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - String</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // TÌM thường dùng: indexOf(), lastIndexOf(), search()
+
+        // Tìm vị trí chuỗi nằm đầu
+        var chuoi = "Hệ thống khóa học Raymond.vn";
+        document.write("1.Vị trí xuất hiện chuỗi Raymond.vn là: <b> " + chuoi.indexOf("Raymond.vn") + "</b><br>")
+
+        // Tìm vị trí chuỗi con nằm cuối
+        var chuoi = "Hệ thống khóa học Raymond.vn - Trang web Raymond.vn học theo dự án thực tiễn tại Raymond.vn";
+        document.write("2.Vị trí xuất hiện chuỗi Raymond.vn là: <b> " + chuoi.lastIndexOf("Raymond.vn") + "</b><br>")
+
+        // Tìm vị trí chuỗi con sử dụng search
+        var chuoi = "Hệ thống Raymond.vn - Trang web Raymond.vn học theo dự án thực tiễn tại Raymond.vn";
+        document.write("3.Vị trí xuất hiện chuỗi Raymond.vn là: <b> " + chuoi.search("Raymond.vn") + "</b><br>")
+
+
+
+        // CẮT thường dùng: slice(start, end), substring(start, end), substr(start, length)
+
+        // Slice
+        var chuoi = "Hệ thống khóa học Raymond.vn - Trang web Raymond.vn học theo dự án thực tiễn tại Raymond.vn";
+        document.write("1.Chuỗi cần lấy là: <b> " + chuoi.slice(30, 40) + "</b><br>");
+
+        // Truyền vào âm
+        document.write("2.Chuỗi cần lấy là: <b> " + chuoi.slice(-60, 51) + "</b><br>");
+
+        // Truyền vào 1 số
+        document.write("3.Chuỗi cần lấy là: <b> " + chuoi.slice(51) + "</b><br>");
+
+        // Substring (tham số > 0)
+        document.write("4.Chuỗi cần lấy là: <b> " + chuoi.substring(52, 76) + "</b><br>");
+
+        // substr (nếu start < 0: lấy từ cuối lên trên, length > 0)
+        document.write("5.Chuỗi cần lấy là: <b> " + chuoi.substr(8, 21) + "</b><br>");
+        document.write("6.Chuỗi cần lấy là: <b> " + chuoi.substr(-83, 21) + "</b><br>");
+
+
+
+        // THAY THẾ
+        // replace(str_find, str_replace)
+        document.write("57.Chuỗi thay thế lấy là: <b> " + chuoi.replace("Raymond.vn", "Raymond Dinh") + "</b><br>");
+
+        // CHUYỂN HOA-THƯỜNG
+        // toUpperCase() : chuyển sang chữ Hoa
+        document.write("8.Chuỗi chuyển sang chữ Hoa là: <b> " + chuoi.toUpperCase() +"</b><br>");
+        // toLowerCase() : chuyển sang chữ thường
+        document.write("9.Chuỗi chuyển sang chữ Thường là: <b> " + chuoi.toLowerCase() +"</b><br>");
+
+
+        // NỐI CHUỖI
+        // concat(str1, str2, ...)
+        var chuoi1 = "Hệ thống khóa học ";
+        var chuoi2 = "Raymond.vn";
+        document.write("10.Chuỗi nối là: <b> " + chuoi1.concat(chuoi2) + "</b><br>");
+
+        // hoặc dùng dấu +
+        document.write("11.Chuỗi nối là: <b> " + chuoi1 + chuoi2 + "</b><br>");
+    </script>
+</body>
+</html>

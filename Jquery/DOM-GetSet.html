@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET/SET DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Liên quan đến thẻ: text(), html(), val()
+
+            // text() : lấy nội dung của thẻ
+            $("#btn1").click(function(){ // Get
+                alert("Hàm Text: " + $("#test").text());
+            });
+
+            $("#btn5").click(function(){ // Set
+                $("#txt_1").text("Raymond.vn học lập trình");
+            });
+
+
+            // html() : lấy toàn bộ thẻ
+            $("#btn2").click(function(){ // Get
+                alert("Hàm HTML: " + $("#test").html());
+            });
+
+            $("#btn6").click(function(){ // Set
+                $("#txt_2").html("<i>Raymond.vn in nghiên </i>");
+            });
+
+
+            // val() : lấy giá trị của thẻ input, select, textarea (trong Form)
+            $("#btn3").click(function(){ // Get
+                // alert("Hàm Val: " + $("#test1").val());
+                $("#test1").val("Truyền giá trị vào");
+            });
+
+            $("#btn7").click(function(){ // Set
+                // alert("Hàm Val: " + $("#test1").val());
+                $("#test1").val("Truyền giá trị vào");
+            });
+
+        // Liên quan đến thuộc tính: attr()
+            // attr() : lấy giá trị của thuộc tính
+            $("#btn4").click(function(){ // Get
+                alert("Hàm Attr: " + $("#test2").attr("href"));
+            });
+
+            $("#btn8").click(function(){ // Set
+                $("#test2").attr("href", "https://www.youtube.com/channel/UCS95MAvMkYw-N7vgeyB30bg");
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <p id="txt_1">Text này sẽ đc thay thế.</p>
+    <p id="txt_2">Text này sẽ đc thay thế bằng hàm HTML.</p>
+    <p id="test">Xin chào các bạn đến với hệ thống <b>raymond.vn</b></p>
+    <p>Họ và tên: <input type="text" id="test1" value="Đinh Sỹ Quốc Doanh"></p>
+    <p><a href="https://www.facebook.com/Raymondtime.answerto.all" id="test2">Doanh Đinh</a></p>
+    <button id="btn1">Lấy Text</button>
+    <button id="btn2">Lấy HTML</button>
+    <button id="btn3">Lấy Value</button>
+    <button id="btn4">Lấy value thuộc tính href</button>
+    <br>
+    <button id="btn5">Gán Text</button>
+    <button id="btn6">Gán HTML</button>
+    <button id="btn7">Gán Value</button>
+    <button id="btn8">Thay đổi value thuộc tính href</button>
+
+
+
+</body>
+</html>

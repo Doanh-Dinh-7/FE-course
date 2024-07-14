@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade in/out - Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // ví dụ về fade in/out (display: none)
+
+            $("#fadeIn").click(function(){
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+           
+            $("#fadeOut").click(function(){
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            });
+
+
+            // Ví dụ về Toggle/To
+            $(".flip").click(function(){
+                $(".panel").slideToggle("slow");
+            });
+
+            $("#fadeTo").click(function(){
+                $("#div1").fadeTo("slow", 0.14);
+                $("#div2").fadeTo("slow", 0.5);
+                $("#div3").fadeTo("fast", 0.7);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p class="flip" style="background-color: aqua;">Học lập trình chuyên sâu tại raymond.by.time |^|</p>
+    <div class="panel" style="display:block;">
+        <p>Hệ thống khóa học vân vân</p>
+        <p>Đăng ký ngay hôm nay</p>
+
+    </div>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeOut">Fade Out</button>
+    <button id="fadeTo">Fade To</button>
+
+
+    <div id="div1" style="width:80px; height:80px; background-color:red; display:none;"></div>
+    <br>
+    <div id="div2" style="width:80px; height:80px; background-color:green; display:none;"></div>
+    <br>
+    <div id="div3" style="width:80px; height:80px; background-color:blue; display:none;"></div>
+    <br>
+
+
+</body>
+</html>

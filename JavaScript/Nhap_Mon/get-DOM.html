@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Lấy giá trị</title>
+</head>
+<body>
+ 
+</body>
+    <script type="text/javascript">
+
+        // Tìm thẻ thông qua ID của thẻ
+        function LayGiaTri(){
+            // Cach 1
+            var theP = document.getElementById("noi_dung");
+            theP.innerHTML = "Xin chao RaymondDinh"; 
+            theP.style.color = "red"; 
+
+            // Cach 2
+        /*    document.getElementById("noi_dung").innerHTML = "Xin chao RaymondDinh";
+            document.getElementById("noi_dung").style.color = "red";
+        */
+        }
+
+
+        // Tìm tất cả thẻ thông qua tên thẻ
+        function LayGiaTriTheP2(){
+            var all_p = document.getElementsByTagName ("p");
+            var theP = document.getElementById("noi_dung");
+            theP.innerHTML = "So the P: " + all_p.length + " | Noi dung the P: " + all_p[3].innerHTML; 
+            theP.style.color = "green"; 
+        }
+
+
+        // Tìm tất cả thẻ thông qua CSS class
+        function LayGiaTriClass(){
+            var all_class = document.getElementsByClassName ("demo");
+            var theP = document.getElementById("noi_dung");
+            theP.innerHTML = "So the P: " + all_class.length + " | Noi dung the P: " + all_class[1].innerHTML; 
+            theP.style.color = "purple"; 
+        }
+    </script>
+
+    <p id="noi_dung"></p>
+    <p class="demo">Thẻ p 1</p>
+    <p>Thẻ p 2</p>
+    <p class="demo">Thẻ p 3</p>
+    <input type="button" value="Lấy giá trị" onclick="LayGiaTri()">
+    <input type="button" value="Lấy giá trị thẻ p2" onclick="LayGiaTriTheP2()">
+
+    <input type="button" value="Lấy giá trị class" onclick="LayGiaTriClass()">
+</html>

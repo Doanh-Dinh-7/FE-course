@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Hộp thoại</title>
+    <script type="text/javascript">
+
+        // CÁC HỘP THOẠI TRONG JAVASCRIPT
+
+        // 1. Hộp thoại cảnh báo (Alert Box)
+        // 2. Hộp thoại xác nhận (Confirm Box)
+        // 3. Hộp thoại nhập liệu (Prompt Box)
+
+        // Hàm demo Alert Box
+        function XuatThongBao(){
+            alert("Hệ thống khóa học Raymond.vn - Trang web Raymond.vn học theo dự án thực tiễn tại Raymond.vn");
+        }
+        
+        // Hàm demo Confirm Box
+        function XacNhan(){
+            var xacnhan;
+            xacnhan = confirm("Bạn đã Đánh giá khóa học này chưa?");
+            if (xacnhan){
+                document.write("Xin cảm ơn các bạn!!!");
+            } else{
+                document.write("Vui lòng đánh giá khóa học này!!!");
+            }
+        }
+
+        // Hàm demo Prompt Box
+        function NhapDuLieu(){
+            var ten;
+            ten =  prompt("Vui lòng nhập vào tên của bạn");
+            document.write(ten);
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="Thông Báo" onclick="XuatThongBao()">
+    <br>
+    <input type="button" value="Xác Nhận" onclick="XacNhan()">
+    <br>
+    <input type="button" value="Nhập dữ liệu" onclick="NhapDuLieu()">
+</body>
+</html>
